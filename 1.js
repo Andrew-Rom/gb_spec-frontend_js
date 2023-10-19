@@ -16,5 +16,5 @@
 const temperatureCelsius = Number.parseFloat(
   prompt("Введите температуру в градусах Цельсия")
 );
-const temperatureFahrenheit = ((9 / 5) * temperatureCelsius + 32).toFixed(1);
-alert(`Цельсий: ${temperatureCelsius}, Фаренгейт: ${temperatureFahrenheit}`);
+const temperatureFahrenheit = ((9 / 5) * temperatureCelsius + 32);
+alert(`Цельсий: ${temperatureCelsius}, Фаренгейт: ${temperatureFahrenheit.toFixed(1)}`);
