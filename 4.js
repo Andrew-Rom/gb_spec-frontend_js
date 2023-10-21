@@ -26,9 +26,9 @@
 const userValue = prompt('Введите целое число');
 
 if (userValue.length === 0 || Number.isNaN(Number(userValue))) {
-    alert ('Ха-ха, очень смешно. Ничего нормального не ввели.')
+    alert ('Ха-ха, очень смешно. Ничего нормального не ввели.');
 } else if (Number(userValue) === 0) {
-    alert ('Делать нечего - Вы ввели 0')
+    alert ('Делать нечего - Вы ввели 0');
 } else {
     const num = Math.abs(Number(userValue));
     const integers = num % 10;
