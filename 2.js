@@ -12,11 +12,11 @@
 const userValue = Number(prompt('Введите число'));
 
 function showAfterTaxSalary(salary, tax = 13) {
-    salary = salary / 100 * (100 - tax);
-    console.log(`Размер заработной платы за вычетом налогов равен ${salary}.`);
+    const netSalary = salary / 100 * (100 - tax);
+    console.log(`Размер заработной платы за вычетом налогов равен ${netSalary.toFixed(2)}.`);
 }
 
-if (Number.isNaN(userValue) || userValue < 0) {
+if (!(Number.isFinite(userValue)) || userValue < 0) {
     console.log('Значение задано неверно');
 } else {
     showAfterTaxSalary(userValue);
