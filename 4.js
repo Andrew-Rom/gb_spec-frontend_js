@@ -19,7 +19,8 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 */
 
 const sum = (n1, n2) => n1 + n2;
-const diff = (n1, n2) => Math.max(n1, n2) - Math.min(n1, n2);
+// const diff = (n1, n2) => Math.max(n1, n2) - Math.min(n1, n2);
+const diff = (n1, n2) => Math.abs(n1 - n2);
 const mult = (n1, n2) => n1 * n2;
 const div = (n1, n2) => (n2 !== 0 ? n1 / n2 : "Error: divide by zero");
 
