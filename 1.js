@@ -7,4 +7,10 @@
 который получаем от функции, в консоль.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+function raiseIntoCube(num) {
+    return num ** 3;
+}
+
+console.log(raiseIntoCube(2));
+console.log(raiseIntoCube(3));
+console.log(raiseIntoCube(-5));
