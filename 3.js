@@ -10,4 +10,14 @@
 три числа. Проверять их не нужно.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+function findMax(n1, n2, n3) {
+  console.log(
+    `Максимальное значение среди чисел ${n1}, ${n2}, ${n3} равно ${Math.max(n1, n2, n3)}.`
+  );
+}
+
+const userNum1 = Number(prompt("Введите 1-е число"));
+const userNum2 = Number(prompt("Введите 2-е число"));
+const userNum3 = Number(prompt("Введите 3-е число"));
+
+findMax(userNum1, userNum2, userNum3);
