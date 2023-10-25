@@ -18,4 +18,14 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 Демонстрировать работы функций не обязательно.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const sum = (n1, n2) => n1 + n2;
+const diff = (n1, n2) => Math.max(n1, n2) - Math.min(n1, n2);
+const mult = (n1, n2) => n1 * n2;
+const div = (n1, n2) => (n2 !== 0 ? n1 / n2 : "Error: divide by zero");
+
+console.log(sum(2, 6));
+console.log(diff(2, 6));
+console.log(diff(6, 6));
+console.log(mult(2, 6));
+console.log(div(2, 6));
+console.log(div(2, 0));
