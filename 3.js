@@ -14,4 +14,18 @@
 не окажется, значит нужно будет вывести пустой массив.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const mySimpleArray = [];
+const indexItemsArray = [];
+for (let i = 0; i < 5; i++) {
+    mySimpleArray.push(Math.trunc(Math.random() * 10));
+    if (mySimpleArray[i] === 3) {
+        indexItemsArray.push(i);
+    }
+}
+console.log(mySimpleArray);
+console.log(mySimpleArray.reduce((sum, item) => {
+    return sum + item;
+  }, 0)
+);
+console.log(Math.min(...mySimpleArray));
+console.log(indexItemsArray);
