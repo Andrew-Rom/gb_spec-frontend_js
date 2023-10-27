@@ -12,4 +12,7 @@ xxxx
 xxxxx
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const item = 'x';
+for (let i = 1; i <= 20; i++) {
+    console.log(item.repeat(i));
+}
