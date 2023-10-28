@@ -23,9 +23,7 @@ for (let i = 0; i < 5; i++) {
     }
 }
 console.log(mySimpleArray);
-console.log(mySimpleArray.reduce((sum, item) => {
-    return sum + item;
-  }, 0)
+console.log(mySimpleArray.reduce((sum, item) => sum + item, 0)
 );
 console.log(Math.min(...mySimpleArray));
 console.log(indexItemsArray);
