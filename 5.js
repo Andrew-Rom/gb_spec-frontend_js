@@ -17,4 +17,8 @@ const ru = [
   "воскресенье",
 ];
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const objectEnRU = {};
+for (let i = 0; i < Math.min(en.length, ru.length); i++) {
+  objectEnRU[en[i]] = ru[i];
+}
+console.log(objectEnRU);
